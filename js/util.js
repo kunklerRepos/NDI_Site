@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 const detectMob = () => {
     const toMatch = [
         /Android/i,
@@ -15,22 +14,4 @@ const detectMob = () => {
     });
 }
 
-=======
-const detectMob = () => {
-    const toMatch = [
-        /Android/i,
-        /webOS/i,
-        /iPhone/i,
-        /iPad/i,
-        /iPod/i,
-        /BlackBerry/i,
-        /Windows Phone/i
-    ];
-    
-    return toMatch.some((toMatchItem) => {
-        return navigator.userAgent.match(toMatchItem);
-    });
-}
-
->>>>>>> Stashed changes
 export default detectMob;
