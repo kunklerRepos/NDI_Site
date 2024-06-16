@@ -109,8 +109,15 @@ html, body
     margin: 0;
     overflow-x: hidden;
     z-index: -1;
-    background-color: #E8E8E8;
-}
+    background-image: url("../assets/pexels-matej-117839-716661.jpg");
+    /*background-image: url("../assets/pexels-stywo-1054218_small.jpg");*/
+    
+    background-repeat: repeat;
+    background-size: cover;
+    background-position:center;
+} 
+
+
 
 
 .form-horizontal {

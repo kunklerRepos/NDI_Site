@@ -22,6 +22,19 @@ const emailSubmission = (e) =>
 {
     e.preventDefault();
     console.log(e);
+
+    let body = e.srcElement[2].value;
+    let subject = e.srcElement[0].value;
+    let responseEmail = e.srcElement[1].value;
+    
+    let completeBody = body;
+    completeBody += "\n" + "--" + subject +"\n" + responseEmail;
+    
+    console.log(completeBody, subject);
+    let anchor = document.createElement("a");
+    
+    window.open(`mailto:crpplumbers@gmail.com?subject=${subject}&body=${completeBody}`);
+
 }
 
 const ContactForm = () =>
