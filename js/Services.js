@@ -12,13 +12,13 @@ const Services = (isPortrait) =>
         </div>
         <div class="col-md-6">
                 <h4>Products</h4>
-            <p class="text-muted">
+            <p class="text-regular">
                 NDI specializes in hydro-mechanical actuators, fluidic control valves, rotor brakes, and directional control values. Our product portfolio that includes proprietary landing gear system, actuator, valve, damper, and rotor brake designs.
             </p>
         </div>
         <div class="col-md-6">
             <h4>Values</h4>
-            <p class="text-muted">
+            <p class="text-regular">
                 To preserve core skills and remain flexible, NDI has developed a low overhead organizational structure centered on the key functions of engineering, quality assurance, production control, production machining and assembly and test.
             </p>
         </div>
@@ -43,8 +43,8 @@ const Services = (isPortrait) =>
             <img src="assets/image001 (1).jpg" class="rounded-circle img-fluid"/>
         </div>
         <div class="col-md-6">
-            <h4>Products</h4>
-            <p class="text-muted">
+            <h4 class="text-regular">Products</h4>
+            <p class="text-regular">
                 NDI specializes in hydro-mechanical actuators, fluidic control valves, rotor brakes, and directional control values. Our product portfolio that includes proprietary landing gear system, actuator, valve, damper, and rotor brake designs.
             </p>
         </div>
@@ -54,8 +54,8 @@ const Services = (isPortrait) =>
 
         </div>
         <div class="col-md-6">
-            <h4>Values</h4>
-            <p class="text-muted">
+            <h4 class="text-regular">Values</h4>
+            <p class="text-regular">
                 NDI is an engineering and manufacturing aerospace company with a product portfolio that includes proprietary landing gear system, actuator, valve, damper, and rotor brake designs.  
                 Having been approached with several new business opportunities, NDI remains very selective and focuses on only a small percentage of programs that are deemed most appropriate and viable.
             </p>
@@ -64,8 +64,8 @@ const Services = (isPortrait) =>
             <img src="assets/image001.jpg" class="rounded-circle img-fluid">
         </div>
         <div class="col-md-6">
-            <h4>Strategy</h4>
-            <p>
+            <h4 class="text-regular">Strategy</h4>
+            <p class="text-regular">
                 To preserve core skills and remain flexible, NDI has developed a low overhead organizational structure centered on the key functions of engineering, quality assurance, production control, production machining and assembly and test.
             </p>
         </div>

@@ -43,12 +43,12 @@ const ContactForm = () =>
 
     contactSection.innerHTML = `
     <div style="display: grid; text-align: center; justify-content: center;">
-        <h5>Email Us</h5>
+        <h5 class="text-regular">Email Us</h5>
     </div>
     <form class="form-horizontal" id="formContact" >
     <div class="form-outline mb-4">
 
-        <label class="form-label" for="NameInput">Name</label>
+        <label class="form-label text-regular" for="NameInput">Name</label>
         <input type="text" id="NameInput" class="form-control" required/>
         <div class="valid-tooltip">
             Looks good!
@@ -57,14 +57,14 @@ const ContactForm = () =>
 
     <!-- Email input -->
     <div class="form-outline mb-4">
-        <label class="form-label" for="form4Example2">Email address</label>
-        <input type="email" id="emailContact" class="form-control" required/>
+        <label class="form-label text-regular" for="form4Example2">Email address</label>
+        <input type="email" id="emailContact" class="form-control text-regular" required/>
     </div>
 
     <!-- Message input -->
     <div class="form-outline mb-4">
-        <label class="form-label" for="form4Example3">Message</label>
-        <textarea class="form-control" id="form4Example3" rows="4" required></textarea>
+        <label class="form-label text-regular" for="form4Example3">Message</label>
+        <textarea class="form-control text-regular" id="form4Example3" rows="4" required></textarea>
     </div>
     <!--div class="g-recaptcha" data-sitekey="6Ld5sCwpAAAAAGhSgWmtGT4fZ6m33nmzZSUXp3UJ"></div-->
     <!-- Submit button -->
@@ -72,18 +72,18 @@ const ContactForm = () =>
     <button class="btn btn-primary btn-block mb-4" style="width: 100%; border-color: #401C90; background-color: #401C90;" onclick="${emailSubmission}">Send</button>
     </form>
     <div style="justify-content: center; display: grid; margin-top: 15%;">
-        <h5>Hours of Operation (PST)</h5>
+        <h5 class="text-regular">Hours of Operation (PST)</h5>
         <a href="tel:3602533656" style="text-align: center">(360) 253-3656</a> 
         <br>
         <table>
             
-            <tr><th>Monday:</th><td>7:30 am - 4:00 pm</td></tr>
-            <tr><th>Tuesday:</th><td>7:30 am - 4:00 pm</td></tr>
-            <tr><th>Wednesday:</th><td>7:30 am - 4:00 pm</td></tr>
-            <tr><th>Thursday:</th><td>7:30 am - 4:00 pm</td></tr>
-            <tr><th>Friday:</th><td>7:30 am - 4:00 pm</td></tr>
-            <tr><th>Saturday:</th><td>Closed</td></tr>
-            <tr><th>Sunday:</th><td>Closed</td></tr>
+            <tr><th class="text-regular">Monday:</th><td class="text-regular">7:30 am - 4:00 pm</td></tr>
+            <tr><th class="text-regular">Tuesday:</th><td class="text-regular">7:30 am - 4:00 pm</td></tr>
+            <tr><th class="text-regular">Wednesday:</th><td class="text-regular">7:30 am - 4:00 pm</td></tr>
+            <tr><th class="text-regular">Thursday:</th><td class="text-regular">7:30 am - 4:00 pm</td></tr>
+            <tr><th class="text-regular">Friday:</th><td class="text-regular">7:30 am - 4:00 pm</td></tr>
+            <tr><th class="text-regular">Saturday:</th><td class="text-regular">Closed</td></tr>
+            <tr><th class="text-regular">Sunday:</th><td class="text-regular">Closed</td></tr>
         </table>
 
     </div>

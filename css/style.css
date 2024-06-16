@@ -8,6 +8,10 @@ nav {
     z-index: 9;
 }
 
+.text-regular
+{
+    color: white;
+}
 .page-header
 {
     margin-top: auto;

@@ -18,7 +18,7 @@ const About = (isPortrait) =>
                     
                 </div>
                 <div style="text-align: center; margin-top: 2%;">
-                <p class="form-horizontal" >
+                <p class="form-horizontal text-regular" >
                         Northwest Dynamics, Inc. (NDI) is an AS9100D certified company that has
                         been supplying the Aerospace Industry with high quality mechanical and
                         hydro-mechanical components for over 35 years.
@@ -34,7 +34,7 @@ const About = (isPortrait) =>
                         <img src="assets/managementPrinciples.png" class="img-fluid rounded float-start" style="width: 33%; height: auto;"/>
                     </div>
                     <div style="text-align: center; margin-top: 2%;">
-                        <p class="text-muted form-horizontal">
+                        <p class="text-regular form-horizontal">
                             NDI management recognizes that continual product quality and customer satisfaction can only be sustained by effective operation of the various related business processes within an organization. NDI has adopted a process approach to manage the various functions within the organization by establishing and implementing a Business and Quality Management System as Illustrated above.
                             
                             </p>
@@ -67,7 +67,7 @@ const About = (isPortrait) =>
 
             <img src="./assets/helicopterDrawing.webp" class="rounded mx-auto d-block" style="width: 100%; height: auto;" alt="Responsive image">
             <div style="text-align: center; margin-top: 2%;">
-                <p class="text-center form-horizontal" >
+                <p class="text-center form-horizontal text-regular" >
                     Northwest Dynamics, Inc. (NDI) is an AS9100D certified company that has
                     been supplying the Aerospace Industry with high quality mechanical and
                     hydro-mechanical components for over 35 years.
@@ -81,7 +81,7 @@ const About = (isPortrait) =>
                         <img src="assets/managementPrinciples.png" class="img-fluid rounded float-start" style="width: 100%; height: auto;"/>
                     </div>
                     <div style="text-align: center; margin-top: 2%;">
-                        <p class="text-muted form-horizontal">
+                        <p class="text-regular form-horizontal">
                             NDI management recognizes that continual product quality and customer satisfaction can only be sustained by effective operation of the various related business processes within an organization. NDI has adopted a process approach to manage the various functions within the organization by establishing and implementing a Business and Quality Management System as Illustrated above.
                             
                             </p>
