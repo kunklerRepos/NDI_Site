@@ -13,7 +13,7 @@ const About = (isPortrait) =>
                
 
                 <div style="display: flex; justify-content: center;">
-                    <img src="./assets/helicopterDrawing.webp" class="img-fluid rounded float-start" style="width: 60%; height: auto;" alt="Responsive image">
+                    <img src="./assets/Bell.jfif" class="img-fluid rounded float-start" style="width: 30%; height: auto;" alt="Responsive image">
                 
                     
                 </div>
@@ -65,7 +65,7 @@ const About = (isPortrait) =>
 
         <div id="Box" class="box">
 
-            <img src="./assets/helicopterDrawing.webp" class="rounded mx-auto d-block" style="width: 100%; height: auto;" alt="Responsive image">
+            <img src="./assets/Bell.jfif" class="rounded mx-auto d-block" style="width: 100%; height: auto;" alt="Responsive image">
             <div style="text-align: center; margin-top: 2%;">
                 <p class="text-center form-horizontal text-regular" >
                     Northwest Dynamics, Inc. (NDI) is an AS9100D certified company that has

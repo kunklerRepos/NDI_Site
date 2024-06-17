@@ -13,13 +13,14 @@ const Services = (isPortrait) =>
         <div class="col-md-6">
                 <h4 class="text-regular">Products</h4>
             <p class="text-regular">
-                NDI specializes in hydro-mechanical actuators, fluidic control valves, rotor brakes, and directional control values. Our product portfolio that includes proprietary landing gear system, actuator, valve, damper, and rotor brake designs.
+            NDI specializes in the design, development and manufacturing of hydro-mechanical actuators, directional control valves and fluidic control valve for the Aerospace industry.
+            Our products include utility and landing gear actuators, door damper devices and rotor brake components (brake calipers, master cylinders and discs).
             </p>
         </div>
         <div class="col-md-6">
             <h4 class="text-regular">Values</h4>
             <p class="text-regular">
-                To preserve core skills and remain flexible, NDI has developed a low overhead organizational structure centered on the key functions of engineering, quality assurance, production control, production machining and assembly and test.
+                NDI strives to meet or exceed customer requirements to deliver quality products on time and is committed to creating a company-wide environment of quality consciousness through continual improvement.
             </p>
         </div>
         <div class="col-md-6">
@@ -45,7 +46,8 @@ const Services = (isPortrait) =>
         <div class="col-md-6">
             <h4 class="text-regular">Products</h4>
             <p class="text-regular">
-                NDI specializes in hydro-mechanical actuators, fluidic control valves, rotor brakes, and directional control values. Our product portfolio that includes proprietary landing gear system, actuator, valve, damper, and rotor brake designs.
+                NDI specializes in the design, development and manufacturing of hydro-mechanical actuators, directional control valves and fluidic control valve for the Aerospace industry.
+                Our products include utility and landing gear actuators, door damper devices and rotor brake components (brake calipers, master cylinders and discs).
             </p>
         </div>
         
@@ -56,8 +58,7 @@ const Services = (isPortrait) =>
         <div class="col-md-6">
             <h4 class="text-regular">Values</h4>
             <p class="text-regular">
-                NDI is an engineering and manufacturing aerospace company with a product portfolio that includes proprietary landing gear system, actuator, valve, damper, and rotor brake designs.  
-                Having been approached with several new business opportunities, NDI remains very selective and focuses on only a small percentage of programs that are deemed most appropriate and viable.
+                NDI strives to meet or exceed customer requirements to deliver quality products on time and is committed to creating a company-wide environment of quality consciousness through continual improvement.
             </p>
         </div>
         <div class="col-md-6">
