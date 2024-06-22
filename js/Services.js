@@ -70,8 +70,7 @@ const Services = (isPortrait) =>
                 To preserve core skills and remain flexible, NDI has developed a low overhead organizational structure centered on the key functions of engineering, quality assurance, production control, production machining and assembly and test.
             </p>
         </div>
-    </div>
-        `;
+    </div>`;
     }
 
     servicesSection.hidden = false;

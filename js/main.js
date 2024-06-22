@@ -5,7 +5,7 @@ import cleanUp from './cleanup.js';
 import Services from './Services.js';
 
 
-const linksArray = ['aboutLink', 'certificationsLink', 'servicesLink', 'contactLink'];
+const linksArray = ['aboutLink', "businessModelLink", 'certificationsLink', 'servicesLink', 'contactLink' ];
 
 
 

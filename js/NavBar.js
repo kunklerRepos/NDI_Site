@@ -10,7 +10,8 @@ const GenerateNavBar = () =>
                     <p class="navbar-brand mx-auto my-auto robofont"><b>Northwest Dynamics Inc.</b></p>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-item nav-link selectedLink" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" id="aboutLink" href="#">About</a>
+                            <a class="nav-item nav-link selectedLink" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" id="aboutLink" href="#">Home</a>
+                            <a class="nav-item nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" id="businessModelLink" href="#">Business Model</a>
                             <a class="nav-item nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" id="certificationsLink" href="#">Certifications</a>
                             <a class="nav-item nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" id="servicesLink" href="#">Services</a>
                             <a class="nav-item nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" id="contactLink" href="#">Contact</a>

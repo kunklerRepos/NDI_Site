@@ -3,10 +3,10 @@ import About from "./about.js";
 import ContactForm from "./contact.js";
 import cleanUp from "./cleanup.js";
 import Certifications from "./certifications.js";
-
+import BusinessModel from "./BusinessModel.js";
 
 const headerDict = {
-    "about": "About", "services": "Services",
+    "about": "About", "businessModel": "Business Model", "services": "Services",
     "contact": "Contact", "certifications": "Certifications"
 };
 
@@ -58,6 +58,11 @@ const getContent = async (elementId) =>
         ContactForm();
         element.hidden = false;
     
+    }
+    else if(idList[targetLink] === "businessModel")
+    {
+        cleanUp("businessModel");
+        BusinessModel();
     }
     else
     {
