@@ -1,51 +1,57 @@
+import cleanUp from './cleanup.js';
+import EmailForm from './emailform.js';
+import MaintenanceManuals from './maintenanceManuals.js';
+
 
 const ContactForm = () =>
 {
     let contactSection = document.getElementById("contact");
 
-    contactSection.innerHTML = `<section class="formcarry-container">
-  <form action="https://formcarry.com/s/CVOTjwYv8iC" method="POST" enctype="multipart/form-data">
     
-    <div class="formcarry-block">
-      <label class="form-label text-regular" for="fc-generated-1-name">Full Name</label>
-      <input type="text" name="name" id="fc-generated-1-name" placeholder="Your first and last name" />
-    </div>
-  	
-    <div class="formcarry-block">
-      <label class="form-label text-regular" for="fc-generated-1-email">Your Email Address</label>
-      <input type="email" name="email" id="fc-generated-1-email" placeholder="john@doe.com" />
-    </div>
-  	
-    <div class="formcarry-block">
-      <label class="form-label text-regular" for="fc-generated-1-message">Your message</label>
-      <textarea name="message" name="message" id="fc-generated-1-message" placeholder="Enter your message..."></textarea>
-    </div>
-  	
-    <div class="formcarry-block">  
-      <button class="btn btn-primary btn-block mb-4" style="width: 100%; border-color: #401C90; background-color: #401C90;" type="submit">Send</button>
-    </div>
-  
-  </form>
+
+    contactSection.innerHTML = `
     <div style="justify-content: center; display: grid; margin-top: 15%;">
-        <h5 class="text-regular">Hours of Operation (PST)</h5>
-        <a href="tel:3602533656" style="text-align: center">(360) 253-3656</a> 
-        <br>
-        <table>
+        <div class="card">
+              <h5 class="card-title text-regular" style="margin-left: 2%;">Contact</h5>
+          <div class="card-body">
+            <div class="col">
+            <div class="row">
             
-            <tr><th class="text-regular">Monday:</th><td class="text-regular">7:30 am - 4:00 pm</td></tr>
-            <tr><th class="text-regular">Tuesday:</th><td class="text-regular">7:30 am - 4:00 pm</td></tr>
-            <tr><th class="text-regular">Wednesday:</th><td class="text-regular">7:30 am - 4:00 pm</td></tr>
-            <tr><th class="text-regular">Thursday:</th><td class="text-regular">7:30 am - 4:00 pm</td></tr>
-            <tr><th class="text-regular">Friday:</th><td class="text-regular">7:30 am - 4:00 pm</td></tr>
-            <tr><th class="text-regular">Saturday:</th><td class="text-regular">Closed</td></tr>
-            <tr><th class="text-regular">Sunday:</th><td class="text-regular">Closed</td></tr>
-        </table>
+            <h5 class="card-header text-regular">Operating Monday-Friday: 7:30 - 4:00 (PST)</h5>
+        
+            <h5 class=" text-regular">Phone: <a href="tel:3602533656" style="text-align: center text-regular">(360) 253-3656</a></h5>
+              
+                <a href="#" id="maintManuals" style="text-align: center text-regular">Obtain Maintenance and Overhaul Manuals</a>
+              
+            </div>
+            <div class="row" style="margin-top: 10%; justify-content: center;">
+                <button type="button" id="emailBtn" class="btn text-regular" style="outline: white 2px solid; width: 90%;">Email</button>
+              
+            </div>
+          </div>
+        </div>
 
-    </div>
+    </div>`;
 
-  </section>`;
+    let maintenanceManuals = document.getElementById("maintManuals");
 
- 
+    maintenanceManuals.addEventListener("click", () => {
+      console.log("test");
+      cleanUp("contact");
+      MaintenanceManuals();
+
+    });
+
+   let EmailButton = document.getElementById("emailBtn");
+   
+   EmailButton.onclick = () => {
+      cleanUp("contact")
+      EmailForm();
+    
+
+   };
+
+
 };
 
 

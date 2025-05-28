@@ -41,12 +41,17 @@ const getContent = async (elementId) =>
     if (idList[targetLink] === 'about')
     {
         document.body.style = "height: 100%; overflow-y: hidden;";
+        cleanUp("emailSection");
+        cleanUp("maintenanceManuals");
         cleanUp('about');
         About(window.matchMedia('(orientation: portrait)').matches);
     }
     else if (idList[targetLink] === 'services')
     {
         document.body.style = "height: 100%; overflow-y: scroll;";
+        cleanUp("emailSection");
+        
+        cleanUp("maintenanceManuals");
         cleanUp('services');
         Services(window.matchMedia('(orientation: portrait)').matches);
     }
@@ -54,6 +59,9 @@ const getContent = async (elementId) =>
     else if(idList[targetLink] === 'contact')
     {
         document.body.style = "height: 100%; overflow-y: scroll;";
+        cleanUp("emailSection");
+        
+        cleanUp("maintenanceManuals");
         cleanUp('contact');
         ContactForm();
         element.hidden = false;
@@ -61,12 +69,17 @@ const getContent = async (elementId) =>
     }
     else if(idList[targetLink] === "businessModel")
     {
+        cleanUp("emailSection");
+        
+        cleanUp("maintenanceManuals");
         cleanUp("businessModel");
         BusinessModel();
     }
     else
     {
-
+        cleanUp("emailSection");
+        
+        cleanUp("maintenanceManuals");
         cleanUp("certifications");
         Certifications()
     }

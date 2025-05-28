@@ -9,6 +9,18 @@ a
     color: white;
 }
 
+.btn:hover
+{
+  background-color: white;
+
+}
+
+.card
+{
+  background-color: rgba(0,0,0,0) !important;
+  border: 2px solid white !important;
+}
+
 nav {
     padding: 24px;
     text-align: center;
@@ -38,7 +50,7 @@ p, label, h1 {
     color: black;
 }
 
-h1, a {
+h1, a, p, td, th{
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
