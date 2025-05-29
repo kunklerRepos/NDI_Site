@@ -20,17 +20,17 @@ function MaintenanceManuals()
     
     <div class="formcarry-block">
       <label class="form-label text-regular" for="fc-generated-1-name">Full Name</label>
-      <input type="text" name="name" disabled id="fc-generated-1-name" placeholder="Your first and last name" />
+      <input type="text" name="name" id="fc-generated-1-name" placeholder="Your first and last name" />
     </div>
   	
     <div class="formcarry-block">
       <label class="form-label text-regular" for="fc-generated-1-email">Your Email Address</label>
-      <input type="email" name="email" disabled id="fc-generated-1-email" placeholder="john@doe.com" />
+      <input type="email" name="email" id="fc-generated-1-email" placeholder="john@doe.com" />
     </div>
   	
     <div class="formcarry-block">
       <label class="form-label text-regular" for="fc-generated-1-message">Your message</label>
-      <textarea name="message" name="message" disabled id="fc-generated-1-message" placeholder="Enter your message..."></textarea>
+      <textarea name="message" name="message" id="fc-generated-1-message" placeholder="Enter your message..."></textarea>
     </div>
   	
     <div class="formcarry-block">  
