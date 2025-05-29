@@ -10,7 +10,7 @@ const ContactForm = () =>
     
 
     contactSection.innerHTML = `
-    <div style="justify-content: center; display: grid; margin-top: 15%;">
+    <div style="justify-content: center; display: grid;">
         <div class="card">
               <h5 class="card-title text-regular" style="margin-left: 2%;">Contact</h5>
           <div class="card-body">

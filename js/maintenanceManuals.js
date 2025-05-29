@@ -1,5 +1,5 @@
-import cleanUp from "./cleanup";
-import EmailForm from "./emailform";
+//import cleanUp from "./cleanup";
+
 
 function MaintenanceManuals()
 {
@@ -14,7 +14,33 @@ function MaintenanceManuals()
 
 
     };
+    
+    const emailForm = `<section class="formcarry-container">
+  <form action="https://formcarry.com/s/CVOTjwYv8iC" method="POST" enctype="multipart/form-data">
+    
+    <div class="formcarry-block">
+      <label class="form-label text-regular" for="fc-generated-1-name">Full Name</label>
+      <input type="text" name="name" disabled id="fc-generated-1-name" placeholder="Your first and last name" />
+    </div>
+  	
+    <div class="formcarry-block">
+      <label class="form-label text-regular" for="fc-generated-1-email">Your Email Address</label>
+      <input type="email" name="email" disabled id="fc-generated-1-email" placeholder="john@doe.com" />
+    </div>
+  	
+    <div class="formcarry-block">
+      <label class="form-label text-regular" for="fc-generated-1-message">Your message</label>
+      <textarea name="message" name="message" disabled id="fc-generated-1-message" placeholder="Enter your message..."></textarea>
+    </div>
+  	
+    <div class="formcarry-block">  
+      <button class="btn btn-primary btn-block mb-4" style="width: 100%; border-color: #401C90; background-color: #401C90;" type="submit">Send</button>
+    </div>
+  
+  </form>
+  </section>`;
 
+      
 
     let section = document.getElementById("maintenanceManuals");
     section.innerHTML = `
@@ -43,8 +69,9 @@ function MaintenanceManuals()
 
     
     </div>
-    <h4 class="text-regular">Please select which maintenance and overhaul manuals you would like</h4>
-
+    <div style="justify-content: center; display: grid; border-bottom: 1px solid white;">
+      <h4 class="text-regular">Please select which maintenance and overhaul manuals you would like</h4>
+    </div>
     <table class="table">
   <thead>
     <tr>
@@ -66,21 +93,57 @@ function MaintenanceManuals()
     submitBtn.onclick = () => {
       let checkLstArr = [];
 
-
+      let valObj = {};
       Object.keys(manualsObj).forEach(key => {
         let checkbox = document.getElementById(`download_${key}`);
 
         console.log(checkbox.checked, key);
+        if (checkbox.checked)
+        {
+          let keyVal;
+          if (key == "407_2")
+          {
+            keyVal = "407";
+          }
+          let value = `${keyVal != undefined ? keyVal : key} ${manualsObj[key][0]} ${manualsObj[key][1]}`;
+
+          checkLstArr.push(value);
+
+        }
+      });
+
         let name = document.getElementById("nameInput").value;
         let email = document.getElementById("exampleInputEmail1").value;
         let jobTitle = document.getElementById("jobTitleInput").value;
         let companyName = document.getElementById("companyNameInput").value;
+        valObj["name"] = name;
+        valObj["email"] = email;
+        valObj["jobTitle"] = jobTitle;
+        valObj["companyName"] = companyName;
 
-        let submitObj = {};
 
-      });
+       while(section.firstChild)
+        {
+          section.removeChild(section.lastChild);
+
+        }
+        section.innerHTML = emailForm;
+
+        let nameOutput = document.getElementById("fc-generated-1-name");
+        let emailOutput = document.getElementById("fc-generated-1-email");
+        let messageArea = document.getElementById("fc-generated-1-message");
+
+         nameOutput.value = valObj["name"];
+         emailOutput.value = valObj["email"];
+         messageArea.value = `Hello,
+         My name is ${valObj["name"]} and I work as a ${valObj["jobTitle"]} for ${valObj["companyName"]}.
+         I am requesting access to the following manuals: `;
+
+         checkLstArr.forEach(val => {
+          messageArea.value += val + ", "
 
 
+         });
 
     };
 
