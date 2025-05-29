@@ -38,6 +38,21 @@ nav {
     margin-top: auto;
 }
 
+.maintSubmit
+{
+  float: right;
+  background-color: rgba(0,0,0,0);
+  color: white;
+  font-family: 'Roboto';
+  border: 2px solid white;
+}
+
+.maintSubmit:hover
+{
+  background-color: white;
+  color: black;
+}
+
 section
 {
     padding-top: 70px;

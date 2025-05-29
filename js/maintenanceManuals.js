@@ -1,3 +1,6 @@
+import cleanUp from "./cleanup";
+import EmailForm from "./emailform";
+
 function MaintenanceManuals()
 {
     const manualsObj = {
@@ -55,7 +58,31 @@ function MaintenanceManuals()
 
   </tbody>
   </table>
-    `;
+
+    <button type="button" class="btn btn-primary maintSubmit" id="submitBtn" name="submitBtn">Submit </button`;
+
+    let submitBtn = document.getElementById("submitBtn");
+
+    submitBtn.onclick = () => {
+      let checkLstArr = [];
+
+
+      Object.keys(manualsObj).forEach(key => {
+        let checkbox = document.getElementById(`download_${key}`);
+
+        console.log(checkbox.checked, key);
+        let name = document.getElementById("nameInput").value;
+        let email = document.getElementById("exampleInputEmail1").value;
+        let jobTitle = document.getElementById("jobTitleInput").value;
+        let companyName = document.getElementById("companyNameInput").value;
+
+        let submitObj = {};
+
+      });
+
+
+
+    };
 
 
     let target = document.getElementById("tableBody");
@@ -76,9 +103,9 @@ function MaintenanceManuals()
 
         let inputCheckbox = document.createElement("input");
         inputCheckbox.type="checkbox";
-        inputCheckbox.id=`download_${key}`;
-        inputCheckbox.name=`download_${key}`;
-        inputCheckbox.label=`download_${key}`;
+        inputCheckbox.id= originalKey != undefined ? 'download_407_2' : `download_${key}`;
+        inputCheckbox.name=originalKey != undefined ? 'download_407_2' : `download_${key}`;
+        inputCheckbox.label=originalKey != undefined ? 'download_407_2' : `download_${key}`;
         inputCheckbox.className = "form-check-input";
 
 
