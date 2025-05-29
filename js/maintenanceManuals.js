@@ -2,11 +2,12 @@ function MaintenanceManuals()
 {
     const manualsObj = {
         "206-L4": ["B0223-OM", "J"],
-        "407": ["B0223-OM4", "F"],
+        "407_2": ["B0223-OM4", "F"],
         "429": ["B0238-OM", "E"],
         "407": ["B0244-OM", "C"],
         "525": ["B0247-OM", "A"],
-        "505": ["B0249-OM", "B"]
+        "505": ["B0249-OM", "B"],
+
 
 
     };
@@ -60,6 +61,15 @@ function MaintenanceManuals()
     let target = document.getElementById("tableBody");
     
     Object.keys(manualsObj).forEach(key => {
+        
+        let originalKey;
+        if(key == "407_2")
+        {
+          key = "407";
+          originalKey = "407_2"
+        }
+        
+
         let tr = document.createElement("tr");
 
         let th = document.createElement("th");
@@ -84,12 +94,13 @@ function MaintenanceManuals()
         tr.appendChild(td1);
 
         let td2 = document.createElement("td");
-        td2.innerHTML = manualsObj[key][0];
+
+        td2.innerHTML = originalKey != undefined ? "B0223-OM4" : manualsObj[key][0];
         td2.className = "text-regular";
         tr.appendChild(td2);
 
         let td3 = document.createElement("td");
-        td3.innerHTML = manualsObj[key][1];
+        td3.innerHTML = originalKey != undefined ? "F" : manualsObj[key][1];
         td3.className = "text-regular";
         tr.appendChild(td3);
 
