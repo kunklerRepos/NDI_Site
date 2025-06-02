@@ -40,11 +40,7 @@ function MaintenanceManuals()
   </form>
   </section>`;
 
-      
-
-    let section = document.getElementById("maintenanceManuals");
-    section.innerHTML = `
-    <div style="display: block; justify-content: center; margin: 2%; ">
+      let other = `<div style="display: block; justify-content: center; margin: 2%; ">
     
     <div style="display: flex;">
         <label for="nameInput" style="width: 100%; margin-left: 5%" class="form-label text-regular robofont">Name
@@ -66,9 +62,48 @@ function MaintenanceManuals()
     <input type="email" class="form-control" id="exampleInputEmail1" >
     </label>
     </div>
+    
+    
+    </div>`;
 
+    let section = document.getElementById("maintenanceManuals");
+    section.innerHTML = `
+    <form class="needs-validation" >
+    <div class="container" style="display: block; justify-content: center; margin: 2%; ">
+    
+    <div class="row">
+    <div class="col" style="width: 1%">
+        <label for="nameInput" style="width: 100%;" class="form-label text-regular robofont">Name
+        <input type="text" class="form-control" id="nameInput" ></label>
+         
+    </div>
+    <div class="col" style="width: 1%">
+    <label for="jobTitleInput" style="width: 100%;" class="form-label text-regular robofont">Job Title
+        <input type="text" class="form-control" id="jobTitleInput" >
+        </label>    
+    </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col">
+
+      <label for="companyNameInput" style="width: 100%;" class="form-label text-regular robofont">Company Name
+        <input type="text" class="form-control" id="companyNameInput" >
+      </label>
+    </div>
+
+
+      <div class="col">
+          <label for="exampleInputEmail1" style="width: 100%;" class="form-label text-regular robofont">Email address
+          <input type="email" class="form-control" id="exampleInputEmail1" >
+          </label>
+      </div>
+    </div>
     
     </div>
+
+ </form>
     <div style="justify-content: center; display: grid; border-bottom: 1px solid white;">
       <h4 class="text-regular">Please select which maintenance and overhaul manuals you would like</h4>
     </div>
@@ -76,7 +111,7 @@ function MaintenanceManuals()
   <thead>
     <tr>
       <th scope="col" style="text-align: left;" class="text-regular"></th>
-      <th scope="col" style="text-align: left;" class="text-regular">Bell Aircraft</th>
+      <th scope="col" style="text-a  lign: left;" class="text-regular">Bell Aircraft</th>
       <th scope="col" style="width: 50%; text-align: left;" class="text-regular">NDI Rotor Brake Maintenance and Overhaul Manual</th>
       <th scope="col" style="text-align: left;" class="text-regular">Revision</th>
     </tr>
@@ -86,7 +121,9 @@ function MaintenanceManuals()
   </tbody>
   </table>
 
-    <button type="button" class="btn btn-primary maintSubmit" id="submitBtn" name="submitBtn">Submit </button`;
+    <button type="button" class="btn btn-primary maintSubmit" id="submitBtn" name="submitBtn">Submit </button>
+    
+   `;
 
     let submitBtn = document.getElementById("submitBtn");
 
