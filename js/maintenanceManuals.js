@@ -40,32 +40,7 @@ function MaintenanceManuals()
   </form>
   </section>`;
 
-      let other = `<div style="display: block; justify-content: center; margin: 2%; ">
-    
-    <div style="display: flex;">
-        <label for="nameInput" style="width: 100%; margin-left: 5%" class="form-label text-regular robofont">Name
-        <input type="text" class="form-control" id="nameInput" ></label>
-        <label for="jobTitleInput" style="width: 100%; margin-right: 5%" class="form-label text-regular robofont">Job Title
-        <input type="text" class="form-control" id="jobTitleInput" >
-        </label>     
-    </div>
-    
-    
-    <div style="display: flex;">
-    <label for="companyNameInput" style="width: 100%; margin-left: 5%" class="form-label text-regular robofont">Company Name
-    <input type="text" class="form-control" id="companyNameInput" >
-
-    </label>
-    
-
-    <label for="exampleInputEmail1" style="width: 100%; margin-right: 5%" class="form-label text-regular robofont">Email address
-    <input type="email" class="form-control" id="exampleInputEmail1" >
-    </label>
-    </div>
-    
-    
-    </div>`;
-
+     
     let section = document.getElementById("maintenanceManuals");
     section.innerHTML = `
     <form class="needs-validation" >
@@ -73,12 +48,12 @@ function MaintenanceManuals()
     
     <div class="row">
     <div class="col" style="width: 1%">
-        <label for="nameInput" style="width: 100%;" class="form-label text-regular robofont">Name
+        <label for="nameInput" style="width: 100%;" class="form-label text-regular">Name
         <input type="text" class="form-control" id="nameInput" ></label>
          
     </div>
     <div class="col" style="width: 1%">
-    <label for="jobTitleInput" style="width: 100%;" class="form-label text-regular robofont">Job Title
+    <label for="jobTitleInput" style="width: 100%;" class="form-label text-regular">Job Title
         <input type="text" class="form-control" id="jobTitleInput" >
         </label>    
     </div>
@@ -88,14 +63,14 @@ function MaintenanceManuals()
     <div class="row">
       <div class="col">
 
-      <label for="companyNameInput" style="width: 100%;" class="form-label text-regular robofont">Company Name
+      <label for="companyNameInput" style="width: 100%;" class="form-label text-regular">Company Name
         <input type="text" class="form-control" id="companyNameInput" >
       </label>
     </div>
 
 
       <div class="col">
-          <label for="exampleInputEmail1" style="width: 100%;" class="form-label text-regular robofont">Email address
+          <label for="exampleInputEmail1" style="width: 100%;" class="form-label text-regular">Email address
           <input type="email" class="form-control" id="exampleInputEmail1" >
           </label>
       </div>
@@ -123,7 +98,39 @@ function MaintenanceManuals()
 
     <button type="button" class="btn btn-primary maintSubmit" id="submitBtn" name="submitBtn">Submit </button>
     
+    <div id="warningModal" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Warning</h5>
+        <button type="button" id="closeWarningModal1" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>You cannot leave any field blank and you must select at least one maintenance manual</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="closeWarningModal2" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
    `;
+
+    function closeModal()
+    {
+      document.getElementById("warningModal").style.display = "none";
+
+    }
+
+   const closeButton1 = document.getElementById("closeWarningModal1");
+   const closeButton2 = document.getElementById("closeWarningModal2");
+    closeButton1.onclick = closeModal;
+    closeButton2.onclick = closeModal;
+
 
     let submitBtn = document.getElementById("submitBtn");
 
@@ -149,10 +156,38 @@ function MaintenanceManuals()
         }
       });
 
+      if(checkLstArr.length == 0)
+      {
+        document.getElementById("warningModal").style.display="block";
+        return; 
+      }
+
         let name = document.getElementById("nameInput").value;
         let email = document.getElementById("exampleInputEmail1").value;
         let jobTitle = document.getElementById("jobTitleInput").value;
         let companyName = document.getElementById("companyNameInput").value;
+
+        if (name == "" || name == undefined)
+        {
+            document.getElementById("warningModal").style.display="block";
+            return; 
+        }
+        if (email == "" || name == undefined)
+        {
+          document.getElementById("warningModal").style.display="block";
+          return; 
+        }
+        if (jobTitle == "" || name == undefined)
+        {
+          document.getElementById("warningModal").style.display="block";
+          return;  
+        }
+        if (companyName == "" || name == undefined)
+        {
+          document.getElementById("warningModal").style.display="block";
+          return; 
+        }
+
         valObj["name"] = name;
         valObj["email"] = email;
         valObj["jobTitle"] = jobTitle;

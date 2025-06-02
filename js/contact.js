@@ -46,6 +46,7 @@ const ContactForm = () =>
    
    EmailButton.onclick = () => {
       cleanUp("contact")
+      contactSection.hidden = true;
       EmailForm();
     
 

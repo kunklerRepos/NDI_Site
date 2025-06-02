@@ -1,5 +1,4 @@
 const EmailForm = () => {
-    
     let emailSection = document.getElementById("emailSection");
     emailSection.hidden = false;
     emailSection.innerHTML = `
