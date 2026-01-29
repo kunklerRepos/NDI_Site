@@ -5,7 +5,7 @@ import MaintenanceManuals from './maintenanceManuals.js';
 
 const ContactForm = () =>
 {
-    let contactSection = document.getElementById("contact");
+    const contactSection = document.getElementById("contact");
 
     
 
@@ -33,16 +33,15 @@ const ContactForm = () =>
 
     </div>`;
 
-    let maintenanceManuals = document.getElementById("maintManuals");
+    const maintenanceManuals = document.getElementById("maintManuals");
 
     maintenanceManuals.addEventListener("click", () => {
-      console.log("test");
       cleanUp("contact");
       MaintenanceManuals();
 
     });
 
-   let EmailButton = document.getElementById("emailBtn");
+   const EmailButton = document.getElementById("emailBtn");
    
    EmailButton.onclick = () => {
       cleanUp("contact")
